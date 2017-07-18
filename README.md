@@ -1,13 +1,17 @@
 
 # React Native Camera [![Backers on Open Collective](https://opencollective.com/react-native-camera/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/react-native-camera/sponsors/badge.svg)](#sponsors) [![npm version](https://badge.fury.io/js/react-native-camera.svg)](http://badge.fury.io/js/react-native-camera) [![Gitter](https://badges.gitter.im/lwansbrough/react-native-camera.svg)](https://gitter.im/lwansbrough/react-native-camera)
 
+
+
 The comprehensive camera module for React Native. Including photographs, videos, and barcode scanning!
+
+本插件修改于https://github.com/lwansbrough/react-native-camera.git，感谢原作者
 
 ### Contributing
 - Pull Requests are welcome, if you open a pull request we will do our best to get to it in a timely manner
 - Pull Request Reviews and even more welcome! we need help testing, reviewing, and updating open PRs
 - If you are interested in contributing more actively, please contact me (same username on Twitter, Facebook, etc.) Thanks!
-- We are now on [Open Collective](https://opencollective.com/react-native-camera#sponsor)! Contributions are appreciated and will be used to fund core contributors. [more details](#open-collective) 
+- We are now on [Open Collective](https://opencollective.com/react-native-camera#sponsor)! Contributions are appreciated and will be used to fund core contributors. [more details](#open-collective)
 
 #### Breaking Changes
 ##### android build tools has been bumped to 25.0.2, please update (can be done via android cli or AndroidStudio)
@@ -189,11 +193,12 @@ This property allows you to specify the target output of the captured image data
 
 #### `captureQuality`
 
-Values: `Camera.constants.CaptureQuality.high` or `"high"` (default), `Camera.constants.CaptureQuality.medium` or `"medium"`, `Camera.constants.CaptureQuality.low` or `"low"`, `Camera.constants.CaptureQuality.photo` or `"photo"`, `Camera.constants.CaptureQuality["1080p"]` or `"1080p"`, `Camera.constants.CaptureQuality["720p"]` or `"720p"`, `Camera.constants.CaptureQuality["480p"]` or `"480p"`.
+Values: `Camera.constants.CaptureQuality.high` or `"high"` (default), `Camera.constants.CaptureQuality.medium` or `"medium"`, `Camera.constants.CaptureQuality.low` or `"low"`, `Camera.constants.CaptureQuality.photo` or `"photo"`, `Camera.constants.CaptureQuality["1080p"]` or `"1080p"`, `Camera.constants.CaptureQuality["720p"]` or `"720p"`, `Camera.constants.CaptureQuality["480p"]` or `"480p"`, `Camera.constants.CaptureQuality["288p"]` or `"288p"`.
 
 This property allows you to specify the quality output of the captured image or video. By default the quality is set to high.
 
-When choosing more-specific quality settings (1080p, 720p, 480p), note that each platform and device supports different valid picture/video sizes, and actual resolution within each of these quality settings might differ. There should not be too much variance (if any) for iOS; 1080p should give 1920x1080, 720p should give 1280x720, and 480p should give 640x480 (note that iOS 480p therefore is NOT the typical 16:9 HD aspect ratio, and the typically-HD camera preview screen may differ greatly in aspect from what you actually record!!). For Android, expect more variance: on most Androids, 1080p *should* give 1920x1080 and 720p *should* give 1280x720; however, 480p will at "best" be 853x480 (16:9 HD aspect ratio), but falls back/down to 800x480, 720x480, or "worse", depending on what is closest-but-less-than 853x480 and available on the actual device. If your application requires knowledge of the precise resolution of the output image/video, you might consider manually determine the actual resolution itself after capture has completed (particularly for 480p on Android).
+When choosing more-specific quality settings (1080p, 720p, 480p), note that each platform and device supports different valid picture/video sizes, and actual resolution within each of these quality settings might differ. There should not be too much variance (if any) for iOS; 1080p should give 1920x1080, 720p should give 1280x720, and 480p should give 640x480 (note that iOS 480p therefore is NOT the typical 16:9 HD aspect ratio, and the typically-HD camera preview screen may differ greatly in aspect from what you actually record!!). For Android, expect more variance: on most Androids, 1080p *should* give 1920x1080 and 720p *should* give 1280x720; however, 480p will at "best" be 853x480 (16:9 HD aspect ratio), but falls back/down to 800x480, 720x480, or "worse", depending on what is closest-but-less-than 853x480 and available on the actual device. If your application requires knowledge of the precise resolution of the output image/video, you might consider manually determine the actual resolution itself after capture has completed (particularly for 480p on Android),
+288p is 352x288,可用于社区类发布小视频.
 
 Android also supports `Camera.constants.CaptureQuality.preview` or `"preview"` which matches the output image to the same one used in the preview
 
@@ -303,8 +308,8 @@ If set to `true`, the image returned will be mirrored.
 If set to `true`, the image returned will be rotated to the _right way up_.  WARNING: It uses a significant amount of memory and my cause your application to crash if the device cannot provide enough RAM to perform the rotation.
 
 (_If you find that you need to use this option because your images are incorrectly oriented by default,
-could please submit a PR and include the make model of the device.  We believe that it's not 
-required functionality any more and would like to remove it._) 
+could please submit a PR and include the make model of the device.  We believe that it's not
+required functionality any more and would like to remove it._)
 
 ## Component instance methods
 
