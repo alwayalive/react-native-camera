@@ -5,7 +5,7 @@
 
 The comprehensive camera module for React Native. Including photographs, videos, and barcode scanning!
 
-本插件修改于https://github.com/lwansbrough/react-native-camera.git，感谢原作者
+本插件修改于 https://github.com/lwansbrough/react-native-camera.git，感谢原作者
 
 ### Contributing
 - Pull Requests are welcome, if you open a pull request we will do our best to get to it in a timely manner
