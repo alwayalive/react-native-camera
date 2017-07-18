@@ -1,0 +1,110 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-native-camera@^0.9.4",
+        "scope": null,
+        "escapedName": "react-native-camera",
+        "name": "react-native-camera",
+        "rawSpec": "^0.9.4",
+        "spec": ">=0.9.4 <0.10.0",
+        "type": "range"
+      },
+      "/Users/linjunwen/work/company/trunk/seatour"
+    ]
+  ],
+  "_cnpm_publish_time": 1497558777774,
+  "_from": "react-native-camera@>=0.9.4 <0.10.0",
+  "_hasShrinkwrap": false,
+  "_id": "react-native-camera@0.9.4",
+  "_inCache": true,
+  "_location": "/react-native-camera",
+  "_nodeVersion": "8.0.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-native-camera-0.9.4.tgz_1497558777602_0.11600047955289483"
+  },
+  "_npmUser": {
+    "name": "rt2zz",
+    "email": "ztstory@gmail.com"
+  },
+  "_npmVersion": "5.0.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-camera@^0.9.4",
+    "scope": null,
+    "escapedName": "react-native-camera",
+    "name": "react-native-camera",
+    "rawSpec": "^0.9.4",
+    "spec": ">=0.9.4 <0.10.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/react-native-camera/download/react-native-camera-0.9.4.tgz",
+  "_shasum": "054b58a6f002a7cfae3f11f3c220f4ae393e67c0",
+  "_shrinkwrap": null,
+  "_spec": "react-native-camera@^0.9.4",
+  "_where": "/Users/linjunwen/work/company/trunk/seatour",
+  "author": {
+    "name": "Lochlan Wansbrough",
+    "email": "lochie@live.com",
+    "url": "http://lwansbrough.com"
+  },
+  "bugs": {
+    "url": "https://github.com/lwansbrough/react-native-camera/issues"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/react-native-camera",
+    "logo": "https://opencollective.com/opencollective/logo.txt"
+  },
+  "dependencies": {
+    "opencollective": "^1.0.3"
+  },
+  "description": "A Camera component for React Native. Also reads barcodes.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "054b58a6f002a7cfae3f11f3c220f4ae393e67c0",
+    "size": 44180,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/react-native-camera/download/react-native-camera-0.9.4.tgz"
+  },
+  "gitHead": "97d5d7988ab083e8b43011237a6deaa6b4a10ae5",
+  "homepage": "https://github.com/lwansbrough/react-native-camera",
+  "keywords": [
+    "react-native",
+    "react",
+    "native",
+    "camera",
+    "qr",
+    "code",
+    "barcode"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "lwansbrough",
+      "email": "lochie@live.com"
+    },
+    {
+      "name": "rt2zz",
+      "email": "zstory@ucla.edu"
+    }
+  ],
+  "name": "react-native-camera",
+  "nativePackage": true,
+  "optionalDependencies": {},
+  "publish_time": 1497558777774,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwansbrough/react-native-camera.git"
+  },
+  "scripts": {
+    "postinstall": "opencollective postinstall"
+  },
+  "version": "0.9.4"
+}
