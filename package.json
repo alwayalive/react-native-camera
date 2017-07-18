@@ -24,7 +24,7 @@
   },
   "collective": {
     "type": "opencollective",
-    "url": "https://github.com/mrlinjw/react-native-camera.git",
+    "url": "https://github.com/mrlinjw/react-native-camera.git"
   },
   "scripts": {
     "postinstall": "opencollective postinstall"
