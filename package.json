@@ -2,14 +2,14 @@
   "name": "react-native-camera",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mrlinjw/react-native-camera.git"
+    "url": "https://github.com/alwayalive/react-native-camera.git"
   },
   "version": "0.1.0",
   "description": "A Camera component for React Native. Also reads barcodes.",
   "author": "linjw",
   "nativePackage": true,
   "license": "MIT",
-  "homepage": "https://github.com/mrlinjw/react-native-camera",
+  "homepage": "https://github.com/alwayalive/react-native-camera",
   "keywords": [
     "react-native",
     "react",
@@ -24,7 +24,7 @@
   },
   "collective": {
     "type": "opencollective",
-    "url": "https://github.com/mrlinjw/react-native-camera.git"
+    "url": "https://github.com/alwayalive/react-native-camera.git"
   },
   "scripts": {
     "postinstall": "opencollective postinstall"
